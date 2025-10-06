@@ -10,18 +10,20 @@ It implements a **Support Vector Machine (SVM)** classifier on the **Iris datase
 openfhe-iris-project/
 │
 ├── data/
-│   └── iris.csv                 # Preprocessed Iris dataset
+│   └── iris.csv                     # Preprocessed Iris dataset
 │
 ├── src/
 │   ├── analyze_results.py           # Visualization & CSV analysis (matplotlib)
+│   ├── analyze_results.txt          # Output log of analyze_results.py
 │   ├── fhe_svm_iris.cpp             # Binary-class SVM inference using FHE
+│   ├── fhe_svm_iris.txt             # Output log of fhe_svm_iris.cpp
 │   ├── fhe_svm_iris_multiclass.cpp  # Multiclass (3 classes) SVM inference using FHE
-│   ├── iris_utils.h                 # Dataset loader + normalization utilities
-│   └── output_log.txt               # Auto-generated log of inference results
+│   ├── fhe_svm_iris_multiclass.txt  # Output log of fhe_svm_iris_multiclass.cpp
+│   └── iris_utils.h                 # Dataset loader + normalization utilities
 │
-├── CMakeLists.txt               # Build configuration
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project description (this file)
+├── CMakeLists.txt                   # Build configuration
+├── requirements.txt                 # Python dependencies
+└── README.md                        # Project description (this file)
 ```
 ---
 
@@ -55,21 +57,22 @@ pip install -r requirements.txt
 
 ## Build & Run
 
-### 1️⃣ Build project
+### 1️. Build project
 ```bash
 mkdir build && cd build
 cmake ..
 make
-
-### 2️⃣ Run the binary-class version
-./fhe_svm_iris_full
+```
+### 2️. Run the binary-class version
+```bash
+./fhe_svm_iris
 ```
 Expected output:
 ```bash
 BFV Inner Product Correct? True
 CKKS Inner Product Correct? True
 ```
-### 3️⃣ Run the multiclass version
+### 3️. Run the multiclass version
 ```bash
 ./fhe_svm_iris_multiclass
 ```
@@ -79,7 +82,7 @@ Expected output (example):
 Multiclass encrypted inference accuracy on first 150 samples: 84.67%
 ```
 
-### 4️⃣ Generate results visualization
+### 4️. Generate results visualization
 ```bash
 cd ../src
 python3 analyze_results.py
