@@ -112,6 +112,7 @@ Example saved file:
 ```bash
 src/results_plot.png
 ```
+![Results Overview](src/results_plot.png)
 
 ---
 
@@ -134,4 +135,5 @@ Built using OpenFHE
 
 ## License
 This project follows the BSD 2-Clause License - same as OpenFHE.
+
 
