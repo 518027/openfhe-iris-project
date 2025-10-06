@@ -6,6 +6,7 @@ It implements a **Support Vector Machine (SVM)** classifier on the **Iris datase
 ---
 
 ## Project Structure
+```bash
 openfhe-iris-project/
 │
 ├── data/
@@ -21,7 +22,7 @@ openfhe-iris-project/
 ├── CMakeLists.txt               # Build configuration
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project description (this file)
-
+```
 ---
 
 ## Requirements
@@ -34,46 +35,60 @@ openfhe-iris-project/
 
 ### OpenFHE
 Make sure OpenFHE is built and installed:
+```bash
 cd ~/openfhe-development
 mkdir build && cd build
 cmake ..
 make -j$(nproc)
 sudo make install
+```
 
 ### Python (for visualization)
+```bash
 sudo apt install python3-venv python3-pip
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 ---
 
 ## Build & Run
 
 ### 1️⃣ Build project
+```bash
 mkdir build && cd build
 cmake ..
 make
 
 ### 2️⃣ Run the binary-class version
 ./fhe_svm_iris_full
-
+```
 Expected output:
+```bash
 BFV Inner Product Correct? True
 CKKS Inner Product Correct? True
-
+```
 ### 3️⃣ Run the multiclass version
+```bash
 ./fhe_svm_iris_multiclass
+```
 
 Expected output (example):
+```bash
 Multiclass encrypted inference accuracy on first 150 samples: 84.67%
+```
 
 ### 4️⃣ Generate results visualization
+```bash
 cd ../src
 python3 analyze_results.py
+```
 
 This will save:
+```bash
 results_plot.png
+```
 and print summary tables in the terminal.
 
 ---
@@ -88,15 +103,19 @@ and print summary tables in the terminal.
   - Accuracy table and class distributions.
 
 Example saved file:
+```bash
 src/results_plot.png
+```
 
 ---
 
 ## Output Log Example
+```bash
 Sample 0 true=0 pred=0 scores=[0.981368, 0.119921, -0.10129]
 Sample 1 true=0 pred=0 scores=[0.847003, 0.344583, -0.191586]
 ...
 Multiclass encrypted inference accuracy on first 150 samples: 84.67%
+```
 
 ---
 
