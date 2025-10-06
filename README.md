@@ -9,16 +9,19 @@ It implements a **Support Vector Machine (SVM)** classifier on the **Iris datase
 ```bash
 openfhe-iris-project/
 │
-├── data/
-│   └── iris.csv                     # Preprocessed Iris dataset
-│
 ├── src/
+│   ├── data/
+│   │   └── iris.csv                 # Preprocessed Iris dataset
+│   │
+│   ├── log/                         # Output log
+│   │   ├── analyze_results.txt 
+│   │   ├── fhe_svm_iris.txt  
+│   │   ├── analyze_results.txt
+│   │   └── fhe_svm_iris_multiclass.txt
+│   │
 │   ├── analyze_results.py           # Visualization & CSV analysis (matplotlib)
-│   ├── analyze_results.txt          # Output log of analyze_results.py
 │   ├── fhe_svm_iris.cpp             # Binary-class SVM inference using FHE
-│   ├── fhe_svm_iris.txt             # Output log of fhe_svm_iris.cpp
 │   ├── fhe_svm_iris_multiclass.cpp  # Multiclass (3 classes) SVM inference using FHE
-│   ├── fhe_svm_iris_multiclass.txt  # Output log of fhe_svm_iris_multiclass.cpp
 │   └── iris_utils.h                 # Dataset loader + normalization utilities
 │
 ├── CMakeLists.txt                   # Build configuration
