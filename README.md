@@ -68,6 +68,7 @@ make
 ```
 ### 2️. Run the binary-class version
 ```bash
+cd ../src
 ./fhe_svm_iris
 ```
 Expected output:
@@ -87,7 +88,6 @@ Multiclass encrypted inference accuracy on first 150 samples: 84.67%
 
 ### 4️. Generate results visualization
 ```bash
-cd ../src
 python3 analyze_results.py
 ```
 
@@ -134,3 +134,4 @@ Built using OpenFHE
 
 ## License
 This project follows the BSD 2-Clause License - same as OpenFHE.
+
