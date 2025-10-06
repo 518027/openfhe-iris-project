@@ -1,0 +1,32 @@
+=== Example dataset after normalization ===
+Sample 0: 0.222222 0.625 0.0677966 0.0416667  -> Label: 0
+Sample 1: 0.166667 0.416667 0.0677966 0.0416667  -> Label: 0
+Sample 2: 0.111111 0.5 0.0508475 0.0416667  -> Label: 0
+==========================================
+Weights for class 0: 0.236315 0.581935 -1.31429 -0.152043 0.660584 
+Weights for class 1: -0.0775607 -1.05769 1.28928 -1.15966 0.759126 
+Weights for class 2: -0.158754 0.475758 0.025016 1.3117 -0.41971 
+
+Running multiclass encrypted inference on first 150 samples...
+Sample 0 true=0 pred=0 scores=[0.981368, 0.119921, -0.10129]
+Sample 1 true=0 pred=0 scores=[0.847003, 0.344583, -0.191586]
+Sample 2 true=0 pred=0 scores=[0.904645, 0.238899, -0.143544]
+Sample 3 true=0 pred=0 scores=[0.829282, 0.328828, -0.15811]
+Sample 4 true=0 pred=0 scores=[0.999051, 0.0780054, -0.0770568]
+Sample 5 true=0 pred=0 scores=[1.01855, -0.093906, 0.0753542]
+Sample 6 true=0 pred=0 scores=[0.917964, 0.126445, -0.0444097]
+Sample 7 true=0 pred=0 scores=[0.928281, 0.187999, -0.116279]
+Sample 8 true=0 pred=0 scores=[0.789934, 0.399426, -0.189361]
+Sample 9 true=0 pred=0 scores=[0.85531, 0.370684, -0.225993]
+Sample 10 true=0 pred=0 scores=[1.02728, 0.0471691, -0.0744489]
+Sample 11 true=0 pred=0 scores=[0.892876, 0.21416, -0.107036]
+Sample 12 true=0 pred=0 scores=[0.846774, 0.395057, -0.241831]
+Sample 13 true=0 pred=0 scores=[0.880781, 0.340273, -0.221054]
+Sample 14 true=0 pred=0 scores=[1.19311, -0.159217, -0.0338905]
+Sample 15 true=0 pred=0 scores=[1.20403, -0.364426, 0.160393]
+Sample 16 true=0 pred=0 scores=[1.10766, -0.181315, 0.0736582]
+Sample 17 true=0 pred=0 scores=[0.975033, 0.0716023, -0.0466356]
+Sample 18 true=0 pred=0 scores=[1.02033, -0.0079797, -0.0123529]
+Sample 19 true=0 pred=0 scores=[1.0255, -0.0387572, 0.0132582]
+Multiclass encrypted inference accuracy on first 150 samples: 84.6667%
+Results are saved to results.csv
