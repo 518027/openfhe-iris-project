@@ -1,0 +1,59 @@
+=== Example dataset after normalization ===
+Sample 0: 0.222222 0.625 0.0677966 0.0416667  -> Label: 0
+Sample 1: 0.166667 0.416667 0.0677966 0.0416667  -> Label: 0
+Sample 2: 0.111111 0.5 0.0508475 0.0416667  -> Label: 0
+==========================================
+Learned weights (including bias last): 0.236315 0.581935 -1.31429 -0.152043 0.660584 
+
+Running encrypted inference on first 50 samples...
+Sample 0 true=1 pred=1 score=0.981368
+Sample 1 true=1 pred=1 score=0.847003
+Sample 2 true=1 pred=1 score=0.904645
+Sample 3 true=1 pred=1 score=0.829282
+Sample 4 true=1 pred=1 score=0.999051
+Sample 5 true=1 pred=1 score=1.01855
+Sample 6 true=1 pred=1 score=0.917964
+Sample 7 true=1 pred=1 score=0.928281
+Sample 8 true=1 pred=1 score=0.789934
+Sample 9 true=1 pred=1 score=0.85531
+Sample 10 true=1 pred=1 score=1.02728
+Sample 11 true=1 pred=1 score=0.892876
+Sample 12 true=1 pred=1 score=0.846774
+Sample 13 true=1 pred=1 score=0.880781
+Sample 14 true=1 pred=1 score=1.19311
+Sample 15 true=1 pred=1 score=1.20403
+Sample 16 true=1 pred=1 score=1.10766
+Sample 17 true=1 pred=1 score=0.975033
+Sample 18 true=1 pred=1 score=1.02033
+Sample 19 true=1 pred=1 score=1.0255
+Sample 20 true=1 pred=1 score=0.909986
+Sample 21 true=1 pred=1 score=0.994917
+Sample 22 true=1 pred=1 score=1.0619
+Sample 23 true=1 pred=1 score=0.84704
+Sample 24 true=1 pred=1 score=0.826047
+Sample 25 true=1 pred=1 score=0.809015
+Sample 26 true=1 pred=1 score=0.893334
+Sample 27 true=1 pred=1 score=0.965657
+Sample 28 true=1 pred=1 score=0.963685
+Sample 29 true=1 pred=1 score=0.837817
+Sample 30 true=1 pred=1 score=0.820134
+Sample 31 true=1 pred=1 score=0.941868
+Sample 32 true=1 pred=1 score=1.11748
+Sample 33 true=1 pred=1 score=1.17736
+Sample 34 true=1 pred=1 score=0.85531
+Sample 35 true=1 pred=1 score=0.946614
+Sample 36 true=1 pred=1 score=1.0299
+Sample 37 true=1 pred=1 score=0.85531
+Sample 38 true=1 pred=1 score=0.836458
+Sample 39 true=1 pred=1 score=0.934845
+Sample 40 true=1 pred=1 score=0.990745
+Sample 41 true=1 pred=1 score=0.666956
+Sample 42 true=1 pred=1 score=0.884953
+Sample 43 true=1 pred=1 score=0.904911
+Sample 44 true=1 pred=1 score=0.930059
+Sample 45 true=1 pred=1 score=0.834104
+Sample 46 true=1 pred=1 score=1.00956
+Sample 47 true=1 pred=1 score=0.875805
+Sample 48 true=1 pred=1 score=1.02072
+Sample 49 true=1 pred=1 score=0.926309
+Encrypted inference accuracy on first 50 samples: 100%

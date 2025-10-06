@@ -1,0 +1,27 @@
+=== Inference Results ===
+   true_label  pred_label    score0    score1    score2
+0           0           0  0.981368  0.119921 -0.101290
+1           0           0  0.847003  0.344583 -0.191586
+2           0           0  0.904645  0.238899 -0.143544
+3           0           0  0.829282  0.328828 -0.158110
+4           0           0  0.999051  0.078005 -0.077057
+
+Total Accuracy: 84.67%
+
+=== Confusion Matrix ===
+            Setosa  Versicolor  Virginica
+Setosa          50           0          0
+Versicolor       0          34         16
+Virginica        0           7         43
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+      Setosa       1.00      1.00      1.00        50
+  Versicolor       0.83      0.68      0.75        50
+   Virginica       0.73      0.86      0.79        50
+
+    accuracy                           0.85       150
+   macro avg       0.85      0.85      0.85       150
+weighted avg       0.85      0.85      0.85       150
+
