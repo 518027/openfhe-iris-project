@@ -93,7 +93,7 @@ python3 analyze_results.py
 
 This will save:
 ```bash
-results_plot.png
+results_visualization.png
 ```
 and print summary tables in the terminal.
 
@@ -135,6 +135,7 @@ Built using OpenFHE
 
 ## License
 This project follows the BSD 2-Clause License - same as OpenFHE.
+
 
 
 
